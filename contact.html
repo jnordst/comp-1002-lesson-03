@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Me</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="./contact.html">Contact Me</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <h1>
+                Contact Me
+            </h1>
+        </header>
+
+        <main>
+            <form action="./thanks.html" method="post" name="lesson-03-contact-me" netlify>
+                <fieldset>
+                    <legend>Your Information</legend>
+
+                    <div>
+                        <label for="firstName">First Name</label><br>
+                        <input type="text" name="firstName" id="firstName" required maxlength="15" minlegnth="2" placeholder="Your Name..."><br>
+                        <small>REQUIRED!</small>
+                    </div>
+
+                    <div>
+                        <label for="lastName">Last Name</label><br>
+                        <input type="text" name="lastName" id="lastName" required maxlength="20" minlegnth="2" placeholder="Your Last Name..."><br>
+                        <small>REQUIRED!</small>
+                    </div>
+
+                    <div>
+                        <label for="companyName">Company</label><br>
+                        <input type="text" name="companyName" id="companyName" required maxlength="20" minlegnth="2" placeholder="Company Name..."><br>
+                        <small>REQUIRED!</small>
+                    </div>
+
+                    <div>
+                        <label for="noOfEmployees">Number of Employees</label><br>
+                        <span>N/A</span><input type="radio" name="noOfEmployees" id="noOfEmployees" checked>
+                        <span>1-20</span><input type="radio" name="noOfEmployees" id="noOfEmployees" value="1-20">
+                        <span>21-100</span><input type="radio" name="noOfEmployees" id="noOfEmployees" value="21-100">
+                        <span>100+</span><input type="radio" name="noOfEmployees" id="noOfEmployees" value="100+">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Contact Information</legend>
+
+                    <div>
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email" id="email" required><br>
+                        <small>REQUIRED!</small>
+                    </div>
+
+                    <div>
+                        <label for="tel">Phone</label><br>
+                        <input type="tel" name="tel" id="email">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Inquiry</legend>
+                    <div>
+                        <label for="inquiryType">What is your inquiry about?</label><br>
+                        <select name="inquiryType" id="inquiryType">
+                            <option value="employment">Employement Opprotunity</option>
+                            <option value="business">Business Opprotunity</option>
+                            <option value="freelance">Freelance Inquiry</option>
+                            <option value="general" selected>General Inquiry</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="message">Your Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" required placeholder="Your inquiry here"></textarea><br>
+                        <small>REQUIRED!</small>
+                    </div>
+                    
+                </fieldset>
+
+                <div>
+                    <input type="submit" value="Submit Inquiry">
+                </div>
+            </form>
+        </main>
+
+        <footer>&copy; 2022, Jacob Nordstrom</footer>
+    </body>
+</html>
